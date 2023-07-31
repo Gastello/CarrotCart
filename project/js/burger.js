@@ -4,9 +4,9 @@ let back = document.querySelector('body');
 let header__list = document.querySelector('.header__list');
 
 header__burger.onclick = function () {
-   header__burger.classList.toggle('active');
-   header_menu.classList.toggle('active');
-   back.classList.toggle('lock');
+   header__burger.classList.remove('active');
+   header_menu.classList.remove('active');
+   back.classList.remove('lock');
 }
 
 let prevScrollpos = window.pageYOffset;
