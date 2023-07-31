@@ -29,6 +29,10 @@
       align-items: center;
       justify-content: space-between;
       padding: 45px 0;
+      @media (max-width: $md3) {
+         padding: 20px 0;
+
+      }
    }
    &__logo {
       position: absolute;
@@ -41,12 +45,21 @@
       height: 90px;
       background: #ffffff;
       box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.5) inset;
+      @media (max-width: $md3) {
+         width: 45px;
+         height: 45px;
+      }
       img {
+         max-width: 100%;
+         width: 100%;
          padding: 11px 16px 16px 8px;
          filter: drop-shadow(-1px 4px 4px rgba(0, 0, 0, 0.5));
          &:hover {
             animation: tada;
             animation-duration: 1s;
+         }
+         @media (max-width: $md3) {
+            padding: 5.5px 8px 8px 4px;
          }
       }
    }
@@ -123,7 +136,7 @@
    }
    .header__menu {
       position: fixed;
-      top: -200%;
+      top: -500%;
       left: 0;
       transition-duration: 0.3s;
       width: 100%;
@@ -133,7 +146,7 @@
       align-items: center;
       justify-content: center;
       background-color: #dd7017;
-      padding: 320px 0;
+      padding: 283px 0;
    }
    .header__menu.active {
       top: 0;
