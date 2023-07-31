@@ -466,7 +466,8 @@ body {
   font-size: 18px;
   font-weight: 700;
   -webkit-text-decoration-line: underline;
-  text-decoration-line: underline; }
+  text-decoration-line: underline;
+  white-space: nowrap; }
   .read-more::after {
     content: "";
     height: 16px;

@@ -114,6 +114,7 @@ body {
    font-size: 18px;
    font-weight: 700;
    text-decoration-line: underline;
+   white-space: nowrap;
    &::after {
       content: "";
       height: 16px;
