@@ -104,6 +104,9 @@
 @media (max-width: $md3) {
    body.lock {
       overflow: hidden;
+      @media (max-width: $md3) {
+         overflow: auto;
+      }
    }
    .header__list {
       display: block;

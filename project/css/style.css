@@ -239,7 +239,12 @@ body {
 
 @media (max-width: 767.98px) {
   body.lock {
-    overflow: hidden; }
+    overflow: hidden; } }
+  @media (max-width: 767.98px) and (max-width: 767.98px) {
+    body.lock {
+      overflow: auto; } }
+
+@media (max-width: 767.98px) {
   .header__list {
     display: block; }
     .header__list li {
