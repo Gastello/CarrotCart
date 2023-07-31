@@ -1,0 +1,112 @@
+.footer {
+    padding: 70px 0;
+    background-color: #3b730a;
+
+    @media (max-width: $md3) {
+        padding: 40px 0;
+    }
+    // .footer__grid
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        margin-bottom: 20px;
+        @media (max-width: $md3) {
+            grid-template-columns: 1fr;
+            & > * {
+                &:nth-child(1) {
+                    order: 1;
+                }
+                &:nth-child(2) {
+                    order: 3;
+                }
+                &:nth-child(3) {
+                    order: 5;
+                }
+                &:nth-child(4) {
+                    order: 2;
+                }
+                &:nth-child(5) {
+                    order: 4;
+                }
+                &:nth-child(6) {
+                    order: 6;
+                }
+            }
+        }
+    }
+
+    // .footer__cell
+
+    &__cell {
+    }
+
+    // .footer__label
+
+    &__label {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 350%;
+    }
+
+    // .footer__description
+
+    &__description {
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 222.222%;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        @media (max-width: $md3) {
+            display: block;
+        }
+    }
+
+    // .footer__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        max-width: 282px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    // .footer__icons
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .footer__ico
+
+    &__ico {
+        &:hover {
+            animation: rubberBand;
+            animation-duration: 1s;
+        }
+    }
+
+    // .footer__copyright
+
+    &__copyright {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 222.222%;
+    }
+}
+.container {
+    // .container_footer
+
+    &_footer {
+    }
+}
